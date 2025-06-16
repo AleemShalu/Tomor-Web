@@ -8,7 +8,8 @@ cmds = [
 cmds = [
     "php artisan storage:link", # Create symbolic link for storage
     "chmod -R 777 vendor/mpdf/mpdf/tmp", # Ensure proper permissions for the mpdf tmp directory
-    "apt install -y sed"  # Install sed for modifying configuration files
+    "apt install -y sed",  # Install sed for modifying configuration files
+    "npm run build" # Build frontend using Vite
 ]
 
 [phases.start]
