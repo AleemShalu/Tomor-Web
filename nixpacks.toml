@@ -1,24 +1,20 @@
 [phases.setup]
 cmds = [
-    "mkdir -p /app/.php-custom-config",
-    "cp coolify-php.ini /app/.php-custom-config/"
+    "mkdir -p /app/.php-custom-config", # Create directory for custom PHP configuration
+    "cp coolify-php.ini /app/.php-custom-config/"  # Copy custom PHP configuration file
 ]
 
 [phases.build]
 cmds = [
-    "npm install",
-    "npm run build",
-    "php artisan config:cache",
-    "php artisan storage:link",
-    "php artisan migrate --force",
-    "chmod -R 777 vendor/mpdf/mpdf/tmp",
-    "apt install -y sed"
+    "php artisan migrate --force", # Run Laravel migrations
+    "php artisan storage:link", # Create symbolic link for storage
+    "chmod -R 777 vendor/mpdf/mpdf/tmp", # Ensure proper permissions for the mpdf tmp directory
+    "apt install -y sed"  # Install sed for modifying configuration files
 ]
 
 [phases.start]
 cmds = [
-    "export PHP_INI_SCAN_DIR=/app/.php-custom-config",
-    "pkill -f 'php artisan schedule:work' || true",
-    "nohup php artisan schedule:work > /dev/null 2>&1 &",
-    "if [ -f ../nginx.conf ]; then sed -i '/http {/a\\client_max_body_size 2G;' ../nginx.conf && sed -i '/server {/a\\client_max_body_size 2G;' ../nginx.conf && nginx -s reload; else echo 'nginx.conf not found'; fi"
+    "export PHP_INI_SCAN_DIR=/app/.php-custom-config", # Set PHP environment variable for runtime
+    "pkill -f 'php artisan schedule:work' || true", # Stop any running schedule:work processes
+    "nohup php artisan schedule:work > /dev/null 2>&1 &"  # Start Laravel scheduler in the background
 ]
