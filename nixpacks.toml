@@ -8,7 +8,6 @@ cmds = [
 cmds = [
     "npm install",                                            # Install frontend deps
     "npm run build",                                          # Build frontend (Vite)
-    "composer install --no-dev --optimize-autoloader",       # Laravel deps (prod optimized)
     "php artisan config:cache",                              # Cache config
     "php artisan storage:link",                              # Create symlink for storage
     "php artisan migrate --force",                           # Run migrations safely
