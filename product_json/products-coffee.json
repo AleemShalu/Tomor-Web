@@ -1,0 +1,398 @@
+[
+  {
+    "product_code": "COFFE001",
+    "model_number": "model-number-001",
+    "barcode": "345345",
+    "quantity": 0,
+    "unit_price": 18.00,
+    "calories": 100,
+    "status": true,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "V60",
+        "excerpt": "Precise pour-over for rich flavor",
+        "description": "Precise pour-over for rich flavor"
+      },
+      {
+        "locale": "ar",
+        "name": "في60",
+        "excerpt": "التقطير الدقيق لنكهة غنية",
+        "description": "التقطير الدقيق لنكهة غنية"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label A",
+      "Label B"
+    ]
+  },
+  {
+    "product_code": "COFFE002",
+    "model_number": "model-number-002",
+    "barcode": "34534534",
+    "quantity": 1,
+    "unit_price": 19.99,
+    "calories": 123,
+    "status": 1,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Latte",
+        "excerpt": "Espresso with steamed milk and a touch of foam",
+        "description": "Espresso with steamed milk and a touch of foam"
+      },
+      {
+        "locale": "ar",
+        "name": "لاتيه",
+        "excerpt": "اسبريسو مع حليب ساخن ولمسة من رغوة",
+        "description": "اسبريسو مع حليب ساخن ولمسة من رغوة"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label B",
+      "Label C"
+    ]
+  },
+  {
+    "product_code": "COFFE003",
+    "model_number": "model-number-003",
+    "barcode": "345345",
+    "quantity": 2,
+    "unit_price": 22.99,
+    "calories": 123,
+    "status": true,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Vanilla Late",
+        "excerpt": "A Latte with Vanilla souce",
+        "description": "A Latte with Vanilla souce"
+      },
+      {
+        "locale": "ar",
+        "name": "لاتيه الفانيلا",
+        "excerpt": "لاتيه بصوص الفانيلا اللذيذ",
+        "description": "لاتيه بصوص الفانيلا اللذيذ"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label C",
+      "Label D"
+    ]
+  },
+  {
+    "product_code": "COFFE004",
+    "model_number": "model-number-004",
+    "barcode": "3453534",
+    "quantity": 3,
+    "unit_price": 18.99,
+    "calories": 123,
+    "status": true,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Hazelnut Latte",
+        "excerpt": "A Latte with Hazelnut souce",
+        "description": "A Latte with Hazelnut souce"
+      },
+      {
+        "locale": "ar",
+        "name": "لاتيه بالبندق",
+        "excerpt": "لاتيه بصوص البندق اللذيذ",
+        "description": "لاتيه بصوص البندق اللذيذ"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label D",
+      "Label E"
+    ]
+  },
+  {
+    "product_code": "COFFE005",
+    "model_number": "model-number-005",
+    "barcode": "43534534",
+    "quantity": 4,
+    "unit_price": 24.99,
+    "calories": 123,
+    "status": true,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Flat white",
+        "excerpt": "Espresso with velvety, microfoam milk",
+        "description": "Espresso with velvety, microfoam milk"
+      },
+      {
+        "locale": "ar",
+        "name": "فلات وايت",
+        "excerpt": "اسبريسو مع حليب كريمي",
+        "description": "اسبريسو مع حليب كريمي"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label E",
+      "Label F"
+    ]
+  },
+  {
+    "product_code": "COFFE006",
+    "model_number": "model-number-006",
+    "barcode": "3453453",
+    "quantity": 5,
+    "unit_price": 25.99,
+    "calories": 123,
+    "status": 1,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Espresso",
+        "excerpt": "A shot of pure, bold espresso",
+        "description": "A shot of pure, bold espresso"
+      },
+      {
+        "locale": "ar",
+        "name": "إيسبريسسو",
+        "excerpt": "قهوة بشكل نقي وقوي",
+        "description": "قهوة بشكل نقي وقوي"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label F",
+      "Label G"
+    ]
+  },
+  {
+    "product_code": "COFFE007",
+    "model_number": "model-number-007",
+    "barcode": "5345345",
+    "quantity": 6,
+    "unit_price": 26.99,
+    "calories": 123,
+    "status": true,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Cold Brew",
+        "excerpt": "Smooth, cold-brewed coffee served over ice",
+        "description": "Smooth, cold-brewed coffee served over ice"
+      },
+      {
+        "locale": "ar",
+        "name": "كولد برو",
+        "excerpt": "قهوة باردة وناعمة مصنوعة بتقنية البارد",
+        "description": "قهوة باردة وناعمة مصنوعة بتقنية البارد"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label G",
+      "Label H"
+    ]
+  },
+  {
+    "product_code": "COFFE008",
+    "model_number": "model-number-008",
+    "barcode": "345345",
+    "quantity": 7,
+    "unit_price": 17.99,
+    "calories": 123,
+    "status": 1,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Macchiato",
+        "excerpt": "Espresso stained with a dollop of foam",
+        "description": "Espresso stained with a dollop of foam"
+      },
+      {
+        "locale": "ar",
+        "name": "ماكياتو",
+        "excerpt": "اسبريسو مع رغوة قليلة",
+        "description": "اسبريسو مع رغوة قليلة"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label H",
+      "Label I"
+    ]
+  },
+  {
+    "product_code": "COFFE009",
+    "model_number": "model-number-009",
+    "barcode": "345345",
+    "quantity": 8,
+    "unit_price": 28.99,
+    "calories": 123,
+    "status": true,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Affogato",
+        "excerpt": "Espresso poured over a scoop of vanilla ice cream",
+        "description": "Espresso poured over a scoop of vanilla ice cream"
+      },
+      {
+        "locale": "ar",
+        "name": "آفوجاتو",
+        "excerpt": "اسبريسو مصبوب فوق كرة من الآيس كريم بالفانيليا",
+        "description": "اسبريسو مصبوب فوق كرة من الآيس كريم بالفانيليا"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label I",
+      "Label J"
+    ]
+  },
+  {
+    "product_code": "COFFE0010",
+    "model_number": "model-number-009",
+    "barcode": "534534534",
+    "quantity": 9,
+    "unit_price": 29.99,
+    "calories": 123,
+    "status": 1,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Tiramisu",
+        "excerpt": "A classic Italian dessert",
+        "description": "A classic Italian dessert"
+      },
+      {
+        "locale": "ar",
+        "name": "التيراميسو",
+        "excerpt": "حلوى إيطالية كلاسيكية",
+        "description": "حلوى إيطالية كلاسيكية"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label J",
+      "Label K"
+    ]
+  },
+  {
+    "product_code": "COFFE0011",
+    "model_number": "model-number-0100",
+    "barcode": "5345345",
+    "quantity": 10,
+    "unit_price": 29.99,
+    "calories": 123,
+    "status": true,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Brownies",
+        "excerpt": "Classic, walnut, and fudge",
+        "description": "Classic, walnut, and fudge"
+      },
+      {
+        "locale": "ar",
+        "name": "البندق براونيز",
+        "excerpt": "كلاسيكي، بالجوز، وفادج",
+        "description": "كلاسيكي، بالجوز، وفادج"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label K",
+      "Label L"
+    ]
+  },
+  {
+    "product_code": "COFFE0012",
+    "model_number": "model-number-0101",
+    "barcode": "534534542",
+    "quantity": 10,
+    "unit_price": 29.99,
+    "calories": 123,
+    "status": false,
+    "category_code": "cold_beverages",
+    "translations": [
+      {
+        "locale": "en",
+        "name": "Brownies",
+        "excerpt": "Classic, walnut, and fudge",
+        "description": "Classic, walnut, and fudge"
+      },
+      {
+        "locale": "ar",
+        "name": "البندق براونيز",
+        "excerpt": "كلاسيكي، بالجوز، وفادج",
+        "description": "كلاسيكي، بالجوز، وفادج"
+      }
+    ],
+    "product_images": [
+      {
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA..."
+      }
+    ],
+    "product_image_labels": [
+      "Label K",
+      "Label L"
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+Project Setup Instructions - tomor_laravel-production
+
+1. Extract the zip file  
+   - Unzip `tomor_laravel-production.zip` to your preferred directory.
+
+2. Environment setup  
+   - Copy `.env.example` and rename it to `.env`.  
+   - Update the database and app details in the `.env` file.
+   - Run: 'copy .env.example .env'
+
+3. Install dependencies  
+   - Run: `composer install`
+
+4. Generate app key  
+   - Run: `php artisan key:generate`
+
+5. Run migrations  
+   - Run: `php artisan migrate --seed`
+
+6. Link storage (optional)  
+   - Run: `php artisan storage:link`
+
+7. Start the server  
+   - Run: `php artisan serve`
+
+8. Install frontend dependencies
+     Run: `npm install`  
+     Run: `npm run build`
+
+
+
+-------------
+Env Production:
+
+APP_CURRENCY=SAR
+APP_DEBUG=false
+APP_ENV=dev
+APP_KEY=base64:7oU/gfyZlff7SaIojitWYsoW0dHgBgViAymRLGQ3/tA=
+APP_LOCALE=ar
+APP_NAME=Tomor
+APP_URL=https://app.tomor-sa.com
+AWS_ACCESS_KEY_ID=
+AWS_BUCKET=
+AWS_DEFAULT_REGION=us-east-1
+AWS_SECRET_ACCESS_KEY=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+DB_CONNECTION=mysql
+DB_DATABASE=tomor
+DB_HOST=lcscg8s
+DB_PASSWORD=gonwOOrxFM0o5im92nqM0Xha0FkJYnOXtO40D9RfYhDsFs864pSDGdfTv8NSst0o
+DB_PORT=3306
+DB_USERNAME=mariadb
+DHAMEN_API_VERSION=2
+DHAMEN_APP_ID=dd2a326d
+DHAMEN_APP_KEY=dd4e52436044a7bfb0aa53b94b221f2a
+DHAMEN_BASE_URL=https://waseet-qa-api.apps.devocp4.elm.sa:443/uat
+DHAMEN_CLIENT_ID=758044D4-3846-4D75-AD4F-A58FF9700960
+FILESYSTEM_DISK=local
+FIREBASE_CREDENTIALS=tomar-6b841-firebase-adminsdk-jpgac-2c692098b0.json
+FRONT_CUSTOMER_VEHICLE_LIMIT=10
+FRONT_OTP_CODE_BLOCK_LIMIT_MINUTES=30
+FRONT_OTP_CODE_EXPIRATION_MINUTES=5
+FRONT_OTP_CODE_MAX_ATTEMPTS=5
+FRONT_OTP_CODE_RESEND_LIMIT_SECONDS=1
+GOOGLE_CLIENT_ID=39468616915-1dtrgf7r0hnmm2svfdidm0rdgp12h6na.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+GOOGLE_REDIRECT_URL=https://app.tomor-sa.com/callback/google
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_DISCORD_WEBHOOK_URL=
+LOG_LEVEL=debug
+MAIL_ENCRYPTION=SSL
+MAIL_FROM_ADDRESS=no-reply@tomor-sa.com
+MAIL_FROM_NAME=${APP_NAME}
+MAIL_HOST=smtp.hostinger.com
+MAIL_MAILER=smtp
+MAIL_PASSWORD=Q[8a[u>4
+MAIL_PORT=465
+MAIL_USERNAME=no-reply@tomor-sa.com
+MEMCACHED_HOST=127.0.0.1
+NIXPACKS_PHP_FALLBACK_PATH=/index.php
+NIXPACKS_PHP_ROOT_DIR=/app/public
+PHP_INI_SCAN_DIR=/app/.php-custom-config
+PHP_POST_MAX_SIZE=2G
+PHP_UPLOAD_MAX_FILESIZE=2G
+PUSHER_APP_CLUSTER=mt1
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_HOST=
+PUSHER_PORT=443
+PUSHER_SCHEME=https
+QUEUE_CONNECTION=sync
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+SECONDARY_FILE_DISK=public
+SESSION_DRIVER=database
+SESSION_LIFETIME=120
+ULTRAMSG_INSTANCE_ID=instance91831
+ULTRAMSG_TOKEN=g561rpeqvz37186a
+VITE_PUSHER_APP_CLUSTER=${PUSHER_APP_CLUSTER}
+VITE_PUSHER_APP_KEY=${PUSHER_APP_KEY}
+VITE_PUSHER_HOST=${PUSHER_HOST}
+VITE_PUSHER_PORT=${PUSHER_PORT}
+VITE_PUSHER_SCHEME=${PUSHER_SCHEME}
+
+
+-----
+Instructions for Production Deployment
+
+Every new deploy, run the following commands:
+
+1. For checking orders every minute:  
+   - Run: `nohup php artisan schedule:work > /dev/null 2>&1&`
+
+2. For building new assets:  
+   - Run: `npm run build`
+
+3. To increase request size limit:  
+   - Run: `sed -i '/http {/a\client_max_body_size 2G;' ../nginx.conf && sed -i '/server {/a\client_max_body_size 2G;' ../nginx.conf && nginx -s reload`

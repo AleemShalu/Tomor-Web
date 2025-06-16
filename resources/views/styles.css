@@ -1,0 +1,191 @@
+body{
+    font-family: 'Tajawal', sans-serif;
+    overflow-x: hidden;
+    color:#070846;
+}
+.nav-link{
+    font-weight: 600;
+    color: #070846;
+    margin-left: 1rem;
+}
+.nav-link:hover{
+    color: #9DB004;
+}
+.hero-section{
+    background: url("images/Rectangle.png") no-repeat bottom;
+    background-size: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    padding: 5rem 7rem;
+}
+.tomer1{
+    width: 400px;
+}
+.tomer2{
+    width: 100%;
+}
+.hero-row h1{
+    font-weight: 700;
+}
+.justifyContent-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.justifyContent-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+
+.justifyContent-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+
+}
+.section h2{
+    color: #9DB004;
+    font-weight: 700;
+}
+.phone-ui{
+    width: 500px;
+}
+.item-card{
+    height: 90%;
+    text-align: center;
+background: #E7EDD2;
+box-shadow: 0px 10px 29px #D6DBC4;
+border-radius: 20px;
+padding: 2em;
+margin-top: 1em;
+}
+.item-card p{
+    font-weight: 700;
+    font-size: large;
+}
+.beni-card{
+    position: relative;
+border-radius: 20px;
+font-weight: 700;
+padding: 1em;
+margin-bottom: 1em;
+}
+.beni-card p{
+    text-align: right;
+    margin-right: 16px;
+    margin-bottom: 0;
+}
+.single{
+    background: #EBECF8;
+}
+.non-single{
+    background: #E7EDD2;
+}
+.number{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #9DB004;
+    color: #070846;
+    border-radius: 7px;
+    width: 25px;
+    text-align: center;
+}
+.icon{
+    text-align: left;
+}
+.way-card{
+    height: 90%;
+
+    background-color: #E7EDD2;
+    position: relative;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 7px;
+    margin-top: 1em;
+}
+.step-title{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 200px;
+    color: #fff;
+    font-weight: 400;
+    background-color: #9DB004;
+}
+.step-title2{
+    background-color: #070846;
+}
+.first-step{
+    background-image: url('images/01.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.second-step{
+    background-image: url('images/02.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.third-step{
+    background-image: url('images/03.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.fourth-step{
+    background-image: url('images/04.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.fifth-step{
+    background-image: url('images/05.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.sixth-step{
+    background-image: url('images/06.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.target-text{
+    width: 70%;
+}
+.footer{
+    background-color: #9DB004;
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+}
+
+@media (min-width:320px) and (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        padding: 1em;
+    }
+    .target-text{
+        width: 100%;
+    }
+    .section{
+        padding: 2em;
+    }
+    .phone-ui{
+        width: 300px;
+    }
+
+}
+
