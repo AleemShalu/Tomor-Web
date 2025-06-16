@@ -6,7 +6,6 @@ cmds = [
 
 [phases.build]
 cmds = [
-    "php artisan migrate --seed", # Run Laravel migrations
     "php artisan storage:link", # Create symbolic link for storage
     "chmod -R 777 vendor/mpdf/mpdf/tmp", # Ensure proper permissions for the mpdf tmp directory
     "apt install -y sed"  # Install sed for modifying configuration files
