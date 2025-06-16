@@ -1,23 +1,24 @@
 [phases.setup]
 cmds = [
-    "mkdir -p /app/.php-custom-config",                        # PHP custom config dir
-    "cp coolify-php.ini /app/.php-custom-config/"             # Copy PHP config
+    "mkdir -p /app/.php-custom-config",
+    "cp coolify-php.ini /app/.php-custom-config/"
 ]
 
 [phases.build]
 cmds = [
-    "npm install",                                            # Install frontend deps
-    "npm run build",                                          # Build frontend (Vite)
-    "php artisan config:cache",                              # Cache config
-    "php artisan storage:link",                              # Create symlink for storage
-    "php artisan migrate --force",                           # Run migrations safely
-    "chmod -R 777 vendor/mpdf/mpdf/tmp",                     # mpdf tmp permission
-    "apt install -y sed"                                     # Optional: sed install
+    "npm install",
+    "npm run build",
+    "php artisan config:cache",
+    "php artisan storage:link",
+    "php artisan migrate --force",
+    "chmod -R 777 vendor/mpdf/mpdf/tmp",
+    "apt install -y sed"
 ]
 
 [phases.start]
 cmds = [
-    "export PHP_INI_SCAN_DIR=/app/.php-custom-config",        # Load custom PHP config
-    "pkill -f 'php artisan schedule:work' || true",           # Kill old scheduler
-    "nohup php artisan schedule:work > /dev/null 2>&1 &"      # Start scheduler
+    "export PHP_INI_SCAN_DIR=/app/.php-custom-config",
+    "pkill -f 'php artisan schedule:work' || true",
+    "nohup php artisan schedule:work > /dev/null 2>&1 &",
+    "if [ -f ../nginx.conf ]; then sed -i '/http {/a\\client_max_body_size 2G;' ../nginx.conf && sed -i '/server {/a\\client_max_body_size 2G;' ../nginx.conf && nginx -s reload; else echo 'nginx.conf not found'; fi"
 ]
